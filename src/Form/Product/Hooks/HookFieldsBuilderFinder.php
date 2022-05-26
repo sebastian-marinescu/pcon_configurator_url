@@ -1,13 +1,13 @@
 <?php
     
-    namespace PrestaShop\Module\Democustomfields17\Form\Product\Hooks;
+    namespace PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks;
 
-    use PrestaShop\Module\Democustomfields17\Form\Product\Hooks\HookFieldsBuilderInterface;
+    use PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks\HookFieldsBuilderInterface;
     use Exception;
     
     final class HookFieldsBuilderFinder
     {
-        public const HOOK_FIELDS_BUILDER_NAMESPACE = 'PrestaShop\Module\Democustomfields17\Form\Product\Hooks\\';
+        public const HOOK_FIELDS_BUILDER_NAMESPACE = 'PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks\\';
 
         public function find(string $hookName): ?HookFieldsBuilderInterface{
 

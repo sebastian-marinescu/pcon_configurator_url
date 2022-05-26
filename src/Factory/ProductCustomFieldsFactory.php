@@ -1,8 +1,8 @@
 <?php
 
-namespace PrestaShop\Module\Democustomfields17\Factory;
+namespace PrestaShop\Module\PconConfiguratorUrl\Factory;
 
-use PrestaShop\Module\Democustomfields17\Model\ProductCustomFields;
+use PrestaShop\Module\PconConfiguratorUrl\Model\ProductCustomFields;
 
 class ProductCustomFieldsFactory{
 

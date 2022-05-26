@@ -1,14 +1,14 @@
 <?php
 
-namespace PrestaShop\Module\Democustomfields17\Form\Product;
+namespace PrestaShop\Module\PconConfiguratorUrl\Form\Product;
 
 use PrestaShopBundle\Form\Admin\Type\CommonAbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Module;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use PrestaShop\Module\Democustomfields17\Form\Product\Hooks\HookFieldsBuilderInterface;
+use PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks\HookFieldsBuilderInterface;
 
-class Democustomfields17AdminForm extends CommonAbstractType
+class PconConfiguratorUrlAdminForm extends CommonAbstractType
 {
     public function buildForm(FormBuilderInterface $adminFormBuilder, array $options)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PrestaShop\Module\Democustomfields17\Model;
+namespace PrestaShop\Module\PconConfiguratorUrl\Model;
 
 use ObjectModel;
 use DbQuery;
@@ -14,13 +14,7 @@ class ProductCustomFields extends ObjectModel {
     public $id_product;
 
     /** @var string  */
-    public $my_text_field_example;
-
-    /** @var string  */
-    public $my_translatable_text_field_example;
-
-    /** @var bool  */
-    public $my_switch_field_example;
+    public $pcon_configurator_url_field;
 
     /** @var string Object creation date */
     public $date_add;
@@ -32,8 +26,8 @@ class ProductCustomFields extends ObjectModel {
      * @see ObjectModel::$definition
      */
     public static $definition = [
-        'table' => 'democustomfields17',
-        'primary' => 'id_democustomfields17',
+        'table' => 'pcon_configurator_url',
+        'primary' => 'id_pcon_configurator_url',
         'multilang' => true,
         'multilang_shop' => true,
         'fields' => [
@@ -41,18 +35,9 @@ class ProductCustomFields extends ObjectModel {
                 'type' => self::TYPE_INT,
                 'validate' => 'isUnsignedId'
             ],
-            'my_text_field_example' => [
-                'type' => self::TYPE_HTML,
-                'validate' => 'isCleanHtml'
-            ],
-            'my_translatable_text_field_example' => [
-                'type' => self::TYPE_HTML,
-                'lang' => true,
-                'shop' => true,
-                'validate' => 'isCleanHtml'
-            ],
-            'my_switch_field_example' => [
-                'type' => self::TYPE_BOOL
+            'pcon_configurator_url_field' => [
+                'type' => self::TYPE_STRING,
+                'validate' => 'isUrl'
             ],
             'date_add' => [
                 'type' => self::TYPE_DATE,

@@ -1,9 +1,9 @@
 {
-    "name": "pululuk/democustomfields17",
-    "description": "Demo products custom fields prestashop 1.7",
+    "name": "sebastian-marinescu/pcon_configurator_url",
+    "description": "Custom product-field for Prestashop 1.7 to specify a pCon.ui configurator",
     "autoload": {
         "psr-4": {
-            "PrestaShop\\Module\\Democustomfields17\\": "src/"
+            "PrestaShop\\Module\\PconConfiguratorUrl\\": "src/"
         }
     },
     "config": {
@@ -13,6 +13,9 @@
     "type": "prestashop-module",
     "license": "MIT",
     "authors": [{
+        "name": "Sebastian G. Marinescu",
+        "email": "info@sebastian-marinescu.com"
+    }, {
         "name": "PululuK",
         "email": "pululuandre@hotmail.com"
     }],

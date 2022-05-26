@@ -6,31 +6,31 @@ if (!defined('_PS_VERSION_')) {
 
 require_once __DIR__.'/vendor/autoload.php';
 
-use PrestaShop\Module\Democustomfields17\Form\Product\Hooks\HookFieldsBuilderInterface;
-use PrestaShop\Module\Democustomfields17\Form\Product\Hooks\HookFieldsBuilderFinder;
-use PrestaShop\Module\Democustomfields17\Form\Product\Democustomfields17AdminForm;
-use PrestaShop\Module\Democustomfields17\Form\Product\ProductFormDataHandler;
+use PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks\HookFieldsBuilderInterface;
+use PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks\HookFieldsBuilderFinder;
+use PrestaShop\Module\PconConfiguratorUrl\Form\Product\PconConfiguratorUrlAdminForm;
+use PrestaShop\Module\PconConfiguratorUrl\Form\Product\ProductFormDataHandler;
 use PrestaShop\PrestaShop\Adapter\SymfonyContainer;
 
-class Democustomfields17 extends Module
+class PconConfiguratorUrl extends Module
 {
     private $symfonyInstance = null;
     private $productFormDataHandler;
         
     public function __construct()
     {
-        $this->name = 'democustomfields17';
+        $this->name = 'pcon_configurator_url';
         $this->tab = 'administration';
         $this->version = '1.0.0';
-        $this->author = 'PululuK';
+        $this->author = 'Sebastian G. Marinescu';
         $this->need_instance = 1;
 
         parent::__construct();
 
-        $this->displayName = $this->l('Demo products custom fields prestashop 1.7');
-        $this->description = $this->l('Demo products custom fields prestashop 1.7');
+        $this->displayName = $this->l('pCon.UI Configurator-URL for Prestashop 1.7');
+        $this->description = $this->l('Custom product-field for Prestashop 1.7 to specify a pCon.ui configurator');
 
-        $this->confirmUninstall = $this->l('Are you sure you want to uninstall my module?');
+        $this->confirmUninstall = $this->l('Are you sure you want to uninstall the module?');
 
         $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
         $this->productFormDataHandler = new ProductFormDataHandler();
@@ -111,7 +111,7 @@ class Democustomfields17 extends Module
             'module' => $this,
         ];
 
-        return $formFactory->createNamed($this->name, Democustomfields17AdminForm::class, $data, $options);
+        return $formFactory->createNamed($this->name, PconConfiguratorUrlAdminForm::class, $data, $options);
     }
     
     private function displayProductAdminHookFields(HookFieldsBuilderInterface $hookFieldsBuilder, array $params)
@@ -127,7 +127,7 @@ class Democustomfields17 extends Module
 
         return $this->symfonyContainerInstance()
             ->get('twig')
-            ->render('@PrestaShop/'.$this->name.'/admin/product/customfields.html.twig', [
+            ->render('@PrestaShop/'.$this->name.'/admin/product/configurator_url.html.twig', [
                 'form' => $form->createView(),
             ]);
     }
@@ -136,15 +136,15 @@ class Democustomfields17 extends Module
     {
         // @see https://devdocs.prestashop.com/1.7/modules/concepts/hooks/list-of-hooks/#full-list
         return [
-            'displayAdminProductsExtra',
-            'displayAdminProductsMainStepLeftColumnMiddle',
+            //'displayAdminProductsExtra',
+            //'displayAdminProductsMainStepLeftColumnMiddle',
             'displayAdminProductsMainStepLeftColumnBottom',
-            'displayAdminProductsMainStepRightColumnBottom',
-            'displayAdminProductsQuantitiesStepBottom',
-            'displayAdminProductsPriceStepBottom',
-            'displayAdminProductsOptionsStepTop',
-            'displayAdminProductsOptionsStepBottom',
-            'displayAdminProductsSeoStepBottom',
+            //'displayAdminProductsMainStepRightColumnBottom',
+            //'displayAdminProductsQuantitiesStepBottom',
+            //'displayAdminProductsPriceStepBottom',
+            //'displayAdminProductsOptionsStepTop',
+            //'displayAdminProductsOptionsStepBottom',
+            //'displayAdminProductsSeoStepBottom',
             'actionAdminProductsControllerSaveAfter',
             'actionObjectProductDeleteAfter',
             'actionGetProductPropertiesAfter'

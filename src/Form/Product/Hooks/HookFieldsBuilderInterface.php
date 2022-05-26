@@ -1,6 +1,6 @@
 <?php
     
-    namespace PrestaShop\Module\Democustomfields17\Form\Product\Hooks;
+    namespace PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks;
 
     use Symfony\Component\Form\FormBuilderInterface;
     use Module;

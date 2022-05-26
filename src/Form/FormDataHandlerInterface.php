@@ -1,6 +1,6 @@
 <?php
 
-namespace PrestaShop\Module\Democustomfields17\Form;
+namespace PrestaShop\Module\PconConfiguratorUrl\Form;
 
 interface FormDataHandlerInterface
 {
