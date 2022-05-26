@@ -5,15 +5,7 @@ Custom product-field for Prestashop 1.7 to specify a pCon.ui configurator.
 
 ## Current produt hooks
 
-- ~~displayAdminProductsExtra~~
-- ~~displayAdminProductsMainStepLeftColumnMiddle~~
 - displayAdminProductsMainStepLeftColumnBottom
-- ~~displayAdminProductsMainStepRightColumnBottom~~
-- ~~displayAdminProductsQuantitiesStepBottom~~
-- ~~displayAdminProductsPriceStepBottom~~
-- ~~displayAdminProductsOptionsStepTop~~
-- ~~displayAdminProductsOptionsStepBottom~~
-- ~~displayAdminProductsSeoStepBottom~~
 
 ## Requirements
 
@@ -33,4 +25,4 @@ Custom product-field for Prestashop 1.7 to specify a pCon.ui configurator.
 
 ### Access your data in the Frontend
 
-```{$product.pcon_configurator_url.YOUR_FIELD_NAME_HERE}```
+```{$product.pcon_configurator_url.pcon_configurator_url_field}```

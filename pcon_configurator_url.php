@@ -136,15 +136,7 @@ class PconConfiguratorUrl extends Module
     {
         // @see https://devdocs.prestashop.com/1.7/modules/concepts/hooks/list-of-hooks/#full-list
         return [
-            //'displayAdminProductsExtra',
-            //'displayAdminProductsMainStepLeftColumnMiddle',
             'displayAdminProductsMainStepLeftColumnBottom',
-            //'displayAdminProductsMainStepRightColumnBottom',
-            //'displayAdminProductsQuantitiesStepBottom',
-            //'displayAdminProductsPriceStepBottom',
-            //'displayAdminProductsOptionsStepTop',
-            //'displayAdminProductsOptionsStepBottom',
-            //'displayAdminProductsSeoStepBottom',
             'actionAdminProductsControllerSaveAfter',
             'actionObjectProductDeleteAfter',
             'actionGetProductPropertiesAfter'
