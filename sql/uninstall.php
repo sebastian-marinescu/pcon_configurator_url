@@ -2,7 +2,7 @@
 
 $sql = array();
 
-$sql[] = 'DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'pcon_configurator_url`';
+$sql[] = 'DROP TABLE IF EXISTS `' . _DB_PREFIX_ . 'pcon_configuratorurl`';
 
 foreach ($sql as $query) {
     if (Db::getInstance()->execute($query) == false) {
