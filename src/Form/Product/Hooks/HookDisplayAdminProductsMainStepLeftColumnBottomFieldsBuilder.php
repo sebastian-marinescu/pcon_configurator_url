@@ -12,7 +12,7 @@
         public function addFields(FormBuilderInterface $adminFormBuilder, Module $module) :FormBuilderInterface
         {
             $adminFormBuilder
-                ->add('pcon_configuratorurl_field', TextType::class, [
+                ->add('pconconfiguratorurl_field', TextType::class, [
                     'label' => $module->l('pCon.UI Configurator-URL'),
                     'attr' => [
                         'class' => 'pcon-url'

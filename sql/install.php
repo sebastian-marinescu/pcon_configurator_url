@@ -2,13 +2,13 @@
 
 $sql = array();
 
-$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'pcon_configuratorurl` (
-    `id_pcon_configuratorurl` int(11) NOT NULL AUTO_INCREMENT,
+$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'pconconfiguratorurl` (
+    `id_pconconfiguratorurl` int(11) NOT NULL AUTO_INCREMENT,
     `id_product` int(11) unsigned NOT NULL,
-    `pcon_configuratorurl_field` text DEFAULT NULL,
+    `pconconfiguratorurl_field` text DEFAULT NULL,
     `date_add` datetime NOT NULL,
     `date_upd` datetime NOT NULL,
-    PRIMARY KEY  (`id_pcon_configuratorurl`),
+    PRIMARY KEY  (`id_pconconfiguratorurl`),
     KEY `id_product` (`id_product`)
 ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;';
 

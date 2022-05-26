@@ -14,7 +14,7 @@ final class ProductFormDataHandler implements FormDataHandlerInterface
         $idProduct = (int) $data['id_product'];
         $productCustomFields = ProductCustomFieldsFactory::create($idProduct);
         $productCustomFields->id_product = $idProduct;
-        $productCustomFields->pcon_configuratorurl_field = $data['pcon_configuratorurl_field'];
+        $productCustomFields->pconconfiguratorurl_field = $data['pconconfiguratorurl_field'];
 
         try {
             if($productCustomFields->save()){
@@ -37,7 +37,7 @@ final class ProductFormDataHandler implements FormDataHandlerInterface
         return [
             'id' => $productCustomFields->id,
             'id_product' => $productCustomFields->id_product,
-            'pcon_configuratorurl_field' => $productCustomFields->pcon_configuratorurl_field,
+            'pconconfiguratorurl_field' => $productCustomFields->pconconfiguratorurl_field,
         ];
     }
 }

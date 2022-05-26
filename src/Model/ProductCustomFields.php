@@ -14,7 +14,7 @@ class ProductCustomFields extends ObjectModel {
     public $id_product;
 
     /** @var string  */
-    public $pcon_configuratorurl_field;
+    public $pconconfiguratorurl_field;
 
     /** @var string Object creation date */
     public $date_add;
@@ -26,8 +26,8 @@ class ProductCustomFields extends ObjectModel {
      * @see ObjectModel::$definition
      */
     public static $definition = [
-        'table' => 'pcon_configuratorurl',
-        'primary' => 'id_pcon_configuratorurl',
+        'table' => 'pconconfiguratorurl',
+        'primary' => 'id_pconconfiguratorurl',
         'multilang' => true,
         'multilang_shop' => true,
         'fields' => [
@@ -35,7 +35,7 @@ class ProductCustomFields extends ObjectModel {
                 'type' => self::TYPE_INT,
                 'validate' => 'isUnsignedId'
             ],
-            'pcon_configuratorurl_field' => [
+            'pconconfiguratorurl_field' => [
                 'type' => self::TYPE_STRING,
                 'validate' => 'isUrl'
             ],

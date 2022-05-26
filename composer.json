@@ -1,5 +1,5 @@
 {
-    "name": "sebastian-marinescu/pcon_configuratorurl",
+    "name": "sebastian-marinescu/pconconfiguratorurl",
     "description": "Custom product-field for Prestashop 1.7 to specify a pCon.ui configurator",
     "autoload": {
         "psr-4": {

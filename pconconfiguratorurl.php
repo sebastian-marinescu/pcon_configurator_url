@@ -22,7 +22,7 @@ class PconConfiguratorUrl extends Module
         
     public function __construct()
     {
-        $this->name = 'pcon_configuratorurl';
+        $this->name = 'pconconfiguratorurl';
         $this->tab = 'administration';
         $this->version = '1.0.0';
         $this->author = 'Sebastian G. Marinescu';
