@@ -4,7 +4,10 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
-require_once __DIR__.'/vendor/autoload.php';
+$autoloadPath = __DIR__ . '/vendor/autoload.php';
+if (file_exists($autoloadPath)) {
+    require_once $autoloadPath;
+}
 
 use PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks\HookFieldsBuilderInterface;
 use PrestaShop\Module\PconConfiguratorUrl\Form\Product\Hooks\HookFieldsBuilderFinder;
