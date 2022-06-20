@@ -37,7 +37,7 @@ class ProductCustomFields extends ObjectModel {
             ],
             'pconconfiguratorurl_field' => [
                 'type' => self::TYPE_STRING,
-                'validate' => 'isUrl'
+                'validate' => 'isAbsoluteUrl'
             ],
             'date_add' => [
                 'type' => self::TYPE_DATE,
