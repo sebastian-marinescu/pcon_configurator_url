@@ -1,25 +1,24 @@
 # pconconfiguratorurl
 
-This module adds a custom field on the product page in the backoffice.
-Custom product-field for Prestashop 1.7 to specify a pCon.ui configurator.
+This module adds a custom product-field on the product page in the backoffice to specify a pCon.UI configurator URL.
 
-## Current produt hooks
+## Current hook
 
 - displayAdminProductsMainStepLeftColumnBottom
 
 ## Requirements
 
 - Prestashop >= 1.7.x
-- composer >= 2.0.8
-- See https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/#php-compatibility-chart
+- Composer >= 2.0.8
+- PHP => See [PHP compatibility chart](https://devdocs.prestashop.com/1.7/basics/installation/system-requirements/#php-compatibility-chart)
 
-## Install
+## Installation
 
 - `cd` your_shop_root_dir/modules
 - `git` clone https://github.com/sebastian-marinescu/pconconfiguratorurl.git
 - `cd` pconconfiguratorurl
 - `composer` install
-- Go to BO > Improvement > Modules catalog and install
+- Go to BO > Improvement > Modules-Catalog and install
 
 ## Usage
 
