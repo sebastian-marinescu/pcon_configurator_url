@@ -28,8 +28,8 @@ class ProductCustomFields extends ObjectModel {
     public static $definition = [
         'table' => 'pconconfiguratorurl',
         'primary' => 'id_pconconfiguratorurl',
-        'multilang' => true,
-        'multilang_shop' => true,
+        'multilang' => false,
+        'multilang_shop' => false,
         'fields' => [
             'id_product' => [
                 'type' => self::TYPE_INT,
